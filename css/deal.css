@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+:root {
+    --border: 0.1rem solid #aaa;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+    text-transform: capitalize;
+}
+
+*>img {
+    user-select: none;
+    pointer-events: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.carousel-item img {
+    height: 70vh;
+    width: 100%;
+}
+
+.deal1 {
+    padding: 0rem 10%;
+}
+
+.deal1 .deal2 {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+.deal1 .deal2 .dataflow {
+    height: 100%;
+    width: 50rem;
+    border-radius: 4rem;
+    /* background: yellow; */
+}
+
+.deal1 .deal2 .dataflow img {
+    height: 100%;
+    width: 100%;
+}
+
+.form1 {
+    height: auto;
+    width: 35%;
+    margin-left: .1rem;
+    background: #b0eafe;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+.form1 .text-center {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    width: 15vw;
+    margin: 2rem auto;
+}
+
+.form1 .enquiry-form {
+    width: 70%;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.form1 .enquiry-form input,
+textarea {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: grid;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 0.7rem;
+}
+
+.form1 .enquiry-form textarea {
+    margin-top: 1.5rem;
+    height: 7rem;
+}
+
+.form1 .enquiry-form button {
+    border-radius: 0.7rem;
+    /* margin-left: 68rem; */
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+    border: double 0.1rem transparent;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    text-decoration: none;
+    font-size: 2rem;
+    float: right;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+
+/* CF start */
+
+.CF {
+    padding: 3rem 10%;
+}
+
+.CF-wrapper {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background: yellow; */
+}
+
+.CF-wrapper .CF-img {
+    height: 100%;
+    width: 40%;
+}
+
+.CF-wrapper .CF-img img {
+    height: 34rem;
+    width: 55rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452);
+}
+
+.CF-content {
+    height: 100%;
+    width: 60%;
+}
+
+.CF-wrapper .CF-content h1 {
+    margin: 0px auto;
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0599fc;
+}
+
+.CF-wrapper .CF-content p {
+    font-size: 2.5rem;
+}
+
+.CBF-wrapper {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* background: yellow; */
+}
+
+.cBF-wrapper .CBF-img {
+    height: 100%;
+    width: 40%;
+}
+
+.CBF-wrapper .CBF-img img {
+    height: 34rem;
+    width: 55rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452);
+}
+
+.CBF-content {
+    height: 100%;
+    width: 60%;
+    margin: 4rem;
+}
+
+.CBF-wrapper .CBF-content h1 {
+    margin: 0px auto;
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0599fc;
+}
+
+.CBF-wrapper .CBF-content p {
+    font-size: 2.5rem;
+}
+
+.CBF {
+    padding: 5rem 15%;
+}
+
+.broiler {
+    height: 50%;
+    width: 100%;
+    display: inline-flex;
+    /* background: yellow; */
+    margin-bottom: 5rem;
+}
+
+.broiler-wrapper {
+    height: 100%;
+    width: 55%;
+    margin-left: .5rem;
+}
+
+.broiler-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.broiler .contant {
+    height: 100%;
+    width: 45%;
+    margin-left: .3rem;
+    padding: 3rem;
+    margin-right: .5rem;
+    background: #AFEAFF;
+}
+
+.broiler .contant h1 {
+    margin: 0px auto;
+    font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.broiler .contant li {
+    font-size: 2.5rem;
+}
+
+.work {
+    padding: 5rem 10%;
+}
+
+.work-wrapper {
+    height: 40%;
+    width: 100%;
+}
+
+.work-wrapper .title {
+    width: 100%;
+    /* background: yellow; */
+}
+
+.work-wrapper .title h1 {
+    margin: 0px auto;
+    letter-spacing: .4rem;
+    font-size: 5.9rem;
+    text-transform: capitalize;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0599fc;
+}
+
+.dealer {
+    width: 80%;
+    height: auto;
+    margin: 4rem auto;
+    overflow: hidden;
+    /* background: #aaa; */
+}
+
+.dealer .swiper-slide {
+    text-align: center;
+    font-size: 1.8rem;
+    /* background: blue; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    cursor: pointer;
+    margin-right: 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.dealer .swiper-slide img {
+    display: block;
+    width: 30rem;
+    height: 20rem;
+}
+
+.order {
+    padding: 5rem 20%;
+}
+
+.order .title {
+    margin: 0px auto;
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    margin-bottom: 2rem;
+    border-bottom: .5rem solid #0599fc;
+    padding: 1rem;
+}
+
+.order-wrapper {
+    height: 46.6rem;
+    width: 100%;
+    margin-left: 6rem;
+    display: flex;
+    text-align: center;
+}
+
+.orderdata {
+    height: 38.9rem;
+    width: 33.8rem;
+    margin-right: .5rem;
+    background-image: linear-gradient(to left bottom, rgb(250, 249, 249), rgb(165, 165, 165));
+}
+
+.orderdata:hover {
+    background-image: linear-gradient(to right top, rgb(250, 249, 249), rgb(165, 165, 165));
+}
+
+.orderdata img {
+    height: 33rem;
+    width: 26.5rem;
+}
+
+.orderdata-wrapper {
+    height: 13rem;
+    width: 34rem;
+    margin: 0px auto;
+    background: rgb(241, 248, 252);
+}
+
+.orderdata-wrapper h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    padding: .6rem 2.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    background-image: linear-gradient(to bottom right, rgb(0, 75, 161) 34%, rgb(14, 154, 197) 68%);
+    border: double .1rem transparent;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left, rgb(0, 75, 161) 34%, rgb(14, 154, 197) 68%);
+}
+
+.d-bofin {
+    padding: 2rem 10%;
+    height: 50vh;
+    width: 98%;
+    /* background: rgb(235, 232, 232); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.d-bofin .part1 {
+    height: 100%;
+    width: 40%;
+}
+
+.d-bofin .part2 {
+    height: 100%;
+    width: 60%;
+}
+
+.d-bofin .part2 h1,
+span {
+    margin: 0px auto;
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #0599fc;
+    padding: 1rem;
+}
+
+.d-bofin img {
+    height: 34rem;
+    width: 50rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452);
+    /* referring directly to the animation's @keyframe declaration */
+}
+
+.d-bofin p,
+li {
+    font-size: 2rem;
+}
+
+.d-bofin1 {
+    padding: 2rem 10%;
+    height: 65vh;
+    width: 98%;
+    /* background: rgb(235, 232, 232); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.d-bofin1 .part1 {
+    height: 100%;
+    width: 40%;
+}
+
+.d-bofin1 .part2 {
+    height: 100%;
+    width: 60%;
+}
+
+.d-bofin1 img {
+    height: 54rem;
+    width: 40rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.d-bofin1 .part2 h1 {
+    margin: 0px auto;
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #0599fc;
+    padding: 1rem;
+}
+
+.d-bofin1 p,
+li {
+    font-size: 2rem;
+}
+
+.pop_up .form1 {
+    height: 60vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    background: #b0eafe;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    z-index: 100;
+    display: none;
+}
+
+.pop_up .form1 .title {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem
+}
+
+.pop_up .form1 .title .text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    padding: 1rem;
+}
+
+.pop_up .form1 .title a {
+    text-align: center;
+}
+
+.pop_up .form1 .enquiry-form {
+    width: 75%;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.pop_up .form1 .enquiry-form input,
+textarea,
+select {
+    width: 100%;
+    height: auto;
+    padding: .8rem;
+    font-size: 1.3rem;
+    display: grid;
+    margin-bottom: 0rem;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+    box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 0.7rem;
+}
+
+.pop_up .form1 .enquiry-form button {
+    border-radius: 0.7rem;
+    /* margin-left: 68rem; */
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+    border: double 0.1rem transparent;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    text-decoration: none;
+    font-size: 2rem;
+    float: right;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.pop_up .form1 select {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}

@@ -1,0 +1,270 @@
+    @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+     :root {
+        --border: 0.1rem solid #aaa;
+        --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    * {
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+        text-transform: capitalize;
+    }
+    
+    *>img {
+        user-select: none;
+        pointer-events: none;
+    }
+    
+    header {
+        width: 100%;
+        height: 70vh;
+        background-image: linear-gradient(to left, #fff 84%, #AFEAFF 20%);
+    }
+    
+    .main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 0px solid black;
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    }
+    
+    .left {
+        width: 50%;
+        margin-left: 15rem;
+    }
+    
+    .right {
+        width: 50%;
+    }
+    
+    .left h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+    
+    .left h3 {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+    
+    .left .btn1 {
+        margin-left: 2.2rem;
+        margin-right: 5.8rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0;
+        background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+        border: double .1rem transparent;
+        box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    }
+    
+    .left .btn2 {
+        margin-right: 3rem;
+        border: .1rem solid rgb(2, 85, 211);
+        color: #222;
+        background: #fff;
+        box-shadow: none;
+        text-decoration: none;
+    }
+    
+    .left .btn2:hover {
+        color: rgb(255, 255, 255);
+        letter-spacing: 0;
+        background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+        border: double .1rem transparent;
+        box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    }
+    
+    .left .btn1,
+    .btn2 {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 900;
+        text-align: center;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: .3rem;
+        display: inline-block;
+    }
+    
+    .left .btn1:hover {
+        background: #fff;
+        color: #222;
+        border: .1rem solid rgb(2, 85, 211);
+    }
+    
+    .about1 {
+        padding: 0rem 10%;
+    }
+    
+    .about1 .part {
+        height: 50vh;
+        width: 98%;
+        /* background: rgb(235, 232, 232); */
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about1 .part1 {
+        margin: 7rem;
+        height: 100%;
+        width: 60%;
+        /* background: #fff; */
+    }
+    
+    .about1 .part1 h3 {
+        margin: 0px auto;
+        text-align: center;
+        font-size: 5rem;
+        color: #31e5fc;
+        margin-bottom: 3rem;
+    }
+    
+    .about1 .part2 img {
+        height: 34rem;
+        width: 55rem;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452);
+    }
+    
+    .about1 .part1 p {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .vision {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    
+    .vision .backpic {
+        height: 70vh;
+        width: 80vw;
+        z-index: -100;
+        margin: 0px auto;
+    }
+    
+    .vision .backpic .back {
+        height: 35vh;
+        width: 65%;
+        top: 50%;
+        margin: 0px auto;
+        left: 50%;
+        transform: translate(0%, -100%);
+        background-image: linear-gradient(to bottom right, rgba(49, 50, 51, 0.911) 0%, rgba(155, 157, 160, 0.918) 100%);
+    }
+    
+    .vision .backpic .back h1 {
+        font-size: 5rem;
+        padding: 2rem;
+        color: #31e5fc;
+        padding-bottom: 1rem;
+    }
+    
+    .vision .backpic .back p {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        text-align: center;
+        font-size: 3rem;
+        padding: 2rem;
+        color: #ffffff;
+        padding-bottom: 2rem;
+    }
+    
+    .deal {
+        margin-top: 7rem;
+        height: 35vh;
+        width: 100%;
+        text-align: center;
+        display: list-item;
+        padding-top: 10rem;
+        background: #31bcfc;
+    }
+    
+    .deal h1 {
+        font-size: 4.5rem;
+        color: rgb(0, 0, 0);
+    }
+    
+    .deal h1:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .deal a {
+        margin-top: 4rem;
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: 900;
+        text-align: center;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: .3rem;
+        display: inline-block;
+        margin-left: 2.2rem;
+        margin-right: 3.4rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0;
+        background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+        border: double .1rem transparent;
+        box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    }
+    
+    .deal a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .about2 {
+        padding: 3rem 10%;
+    }
+    
+    .about2 .part {
+        height: 50vh;
+        width: 98%;
+        /* background: rgb(235, 232, 232); */
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about2 .part1 {
+        margin: 7rem;
+        height: 100%;
+        width: 60%;
+        /* background: #fff; */
+    }
+    
+    .about2 .part1 h3 {
+        margin: 0px auto;
+        text-align: center;
+        font-size: 5rem;
+        color: #31e5fc;
+        margin-bottom: 3rem;
+    }
+    
+    .about2 .part2 img {
+        height: 34rem;
+        width: 55rem;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452);
+    }
+    
+    .about2 .part1 p {
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
