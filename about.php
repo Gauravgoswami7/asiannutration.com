@@ -1,74 +1,268 @@
-<?php
-include("header.php");
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-The Noshyard</title>
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <link rel="shortcut icon" href="images/01.png" type="image/png" sizes="16x16">
 
 
-<header>
-    <main class="main">
-        <div class="left">
-            <h1> ASIAN NUTRITION</h1>
-            <h3>
-                Providing Nutrition to India’s Best Protein Source
-            </h3>
-            <a href="bussiness.php" class="btn1">
-                CAREER
-            </a>
-            <a href="product.php" class="btn2">
-                Our PRODUCT
-            </a>
-        </div>
-        <div class="right">
-            <img src="img/form.png" alt="">
-        </div>
-    </main>
-</header>
-<section class="about1">
-  <div class="part">
-<div class="part1">
-  <h3>
-  WHEN WE START
-  </h3>
-  <P>Asian Nutritions Private Limited is incorporated on 28 Jan 2020. Its registered office is in Gurgaon, Haryana, india.</P>
-<p>The Company's status is Active, and it has filed its Annual Returns and Financial Statements up to 31 Mar 2020 (FY 2019-2020). It's a company limited by shares having an authorized capital of Rs 10.00 lakh and a paid-up capital of Rs 1.00 lakh as per MCA.
-2 Directors are associated with the organization. Rajat Mankotia and Surekha Devi are presently associated as directors.</P>
-</div>
-<div class="part2">
-    <img src="img/hen.jpg" alt="">
-</div>
-</div>
-</section>
-<section class="vision">
-    <div class="backpic">
-        <img src="img/large3.jpeg" alt="" style="height:100%; width:100%;  border-radius: 1.5rem; ">
-        <div class="back">
-            <h1 style=" text-align:center;">VISION</h1>
-            <p>To make a difference in anmial's health by offering
-                 them high valued nutritions food, enhancing the quality 
-                 of chicken's life, and immersing ourslives as the best
-                  poulrty feed sellers worldwide.</p>
-        </div>
-    </div>
-</section>
-<div class="deal">
-    <h1>JOIN YOUR BUSINESS WITH US</h1>
-    <a href="bussiness.php">JOIN US</a>
-</div>
-<section class="about2">
-  <div class="part">
-  <div class="part2">
-    <img src="img/large1.jpeg" alt="">
-</div>
-<div class="part1">
-  <h3>
-  MISSION
-  </h3>
-  <P>Providing world-class feed of higher nutritional value ensures the quality of life by following global standerds, innovative biotech solutions, and animals halth industry standerds.</P>
-</div>
+    <!-- font awesome cdn link  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-</div>
-</section>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts     -->
+    <section class="header" style="width: 100%;  ">
+      <div class="logo-div">
+        <a href="#" class="logo">
+          <img src="images/01.png"  alt="Logo" /></a>
+      </div>
+      <nav class="navbar">
+        <a href="index.php">HOME</a>
+        <a href="about.php  ">ABOUT</a>
+        <a href="menu.php">MENU</a>
+        <a href="franchise.php">FRANCHISE</a>
+        <a href="contact.php">CONTACT</a>
+        <a href="booknow.php">ORDER ONLINE</a>
+        <a href="blogs.php">BLOGS</a>
+
+        <!-- <button class="btn" style="margin-left: 20px;"> Reservation</button> -->
+      </nav>
+    
+     <p  style="color: white; font-size:1.7rem; font-weight:600;  padding:0.5rem 1rem;">
+     <?php
+     session_start();
+       if (isset($_SESSION['loggedin'])) {
+        echo $_SESSION['username'];
+       }
+        ?>
+            </p>
+
+            <?php
+            if(isset($_SESSION['loggedin'])){
+              ?>
+              <a class="btn" type="submit" href="userlogout.php" name="logout" style="margin-left:2rem;"> Logout</a>
+              <?php
+            }
+            else{
+              ?>
+               <a href="userlogin.php" class="btn"  id="loginbtn" >Login</a>
+              <?php
+            }
+            ?>
  
-<?php
-include('footer.php');
-?>
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+       
+    </section>
+    <!-- header section ends    -->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style=" background: url(images/slider-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>We Serve Happiness...</h3>
+                        <!-- <a href="#" class="btn">get started</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>Foods Makes You Hunger</h3>
+                        <!-- <a href="#" class="btn">get started</a> -->
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>outstanding food</span>
+                        <h3>We Are Noshyard</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+
+    
+        <!-- <h1 style="text-align: center; font-size:5rem;">Our <span style="color: brown;">Story</span></h1> -->
+        <!-- <div class="about-story-wrapper">
+            <div class="story-img">
+                <img src="images/night-noshyard.jpeg" alt="">
+            </div>
+            <div class="story-para">
+                <h1 style="text-align: center; font-size:5rem; margin-bottom:3rem">Getting <span style="color: brown;">Started</span></h1>
+                <p><b>NOSH YARD offer you the opportunity to buy a franchise at minimum investment. Your hard work and
+                    dedication will be rewarded by our proven formula for the establishment of day to day operation of a
+                    retail store.</b></p>
+                <p><b>NOSH YARD offers you the opportunity to be in business, not by yourself but with us. Our role is to
+                    provide you a complete setup, show you how to run it and provide ongoing support to ensure that the
+                    bussiness runs successfully.</b></p>
+            </div>
+        </div> -->
+        <div class="home-intro">
+            <div class="vertical">
+              <div class="swiper mySwiper2" >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/Website Header1.png" width="100%" height="100%" alt=""></div>
+                  <div class="swiper-slide"><img src="images/Nosh website Header 3.jpg" width="100%" height="100%" alt=""></div>
+                  <div class="swiper-slide"><img src="images/Website Header1.png" width="100%" height="100%" alt=""></div>
+                  <div class="swiper-slide"><img src="images/Nosh website Header 3.jpg" width="100%" height="100%" alt=""></div>
+                  <div class="swiper-slide"><img src="images/Website Header1.png" width="100%" height="100%" alt=""></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+            <div class="vertical-1">
+             <div class="vertical-details" style="width: 100%; height:100%; background:url('images/text-bg.jpg') no-repeat;background-size:cover;">
+             <h1 style="text-align: center; padding:2rem;">Getting <span style="color:brown">Start</span></h1>
+             <div class="ver-icon" >
+               <div class="ver-icon-wrapper"> <img src="images/food-tray (1).png"   alt="">
+               </div>
+               <div class="ver-icon-wrapper"> <img src="images/dinner.png"  alt="">
+              </div>
+              <div class="ver-icon-wrapper"> <img src="images/fast-food.png" alt="">
+              </div>
+             </div>
+           <div class="getstart">  <p> <br> NOSH YARD Offer You The Opportunity To Buy A Franchise At Minimum Investment. Your Hard Work And Dedication Will Be Rewarded By Our Proven Formula For The Establishment Of Day To Day Operation Of A Retail Store.
+            <br> <br> NOSH YARD Offers You The Opportunity To Be In Business, Not By Yourself But With Us. Our Role Is To Provide You A Complete Setup, Show You How To Run It And Provide Ongoing Support To Ensure That The Bussiness Runs Successfully.</p></div>
+             </div>
+            </div>
+            
+          </div>
+          <section class="about" id="about" style="padding: 1rem;"></section>
+        <div class="about-wrapper">
+            <h1 class="animate-charcter" >About <span style="color: brown;">The Noshyard</span></h1>
+
+            <div class="about-content-wrapper ">
+                <h1 style="margin-bottom: 1rem;"><span style="color: brown;"> FOOD BUSSINESS IN INDIA</span></h1>
+                <p> India’s food processing sector is one of the largest in the world. The food and beverages industry accounts for 3% of India’s GDP and is the single largest employer in the country, with more than 7.3 million workforce. <br> Food and beverage
+                    sales in the restaurant and foodservice industry are projected to total Rs 5800 Cr in 2021, up 19.7% from 2020. <br> We launched the <span style="color: brown; font-weight:bold;">Noshyard</span>'s franchise programme to help food joints
+                    and restaurants by 2022 revive their business. <br> Food delivery service industry represents a shift by Online food ordering, as a result of which funding in the food tech space has increased 35x in the last five years and is projected
+                    to increase manifold. Following the COVID-19 pandemic, consumers have become more health-conscious and their preference for increased hygiene practices is expected to grow significantly. <br> The focus of our restaurants is now on
+                    providing the consumers a safe, clean, hygienic and healthy food delivery.</p>
+            </div>
+            <div class="about-content-wrapper ">
+                <h1 style="margin-bottom: 1rem;"><span style="color: brown;"> Our Products</span></h1>
+                <p>Starting from poultry feed manufacturing to our restaurants ,
+                    <span style="color: brown; font-weight: bold;">Noshyard</span> act as catalyst for each of its stakeholders. From sourcing, marketing, retailing till the final act of consumption, taking another leap ahead, NOSH YARD. Makes your hunger
+                    stop by rapid delivery on your doorsteps. No more hassles, we bring all your essential and daily needs to you at your convenience.
+                </p>
+            </div>
+            <div class="about-content-wrapper ">
+                <h1 style="margin-bottom: 1rem;"><span style="color: brown;">WHY CHOOSE NOSHYARD? </span></h1>
+                <p> Nosh Yard is the fastest growing food industry in India. The restaurant business is a powerful incentive machine. Our customer are very loyal to us because of our loyal services to costumer. We provide hygienic and healthy food. Our franchising
+                    plan is unique as it goes beyond convention notions of franchising What we look for is partner rather than just a franchise. Our relationship is of a partner as we know it take equal to succeed. We relize that in the growth of our
+                    partner, lies our own growth. We provide fix income per month and rent of your shop and give you all the tools and support to succeed. We need people like us, who share our mindset and our values to grow our business and build each
+                    other's future.</p>
+            </div>
+            <!-- <div class="about-content-wrapper ">
+                <h1 style="margin-bottom: 1rem;"><span style="color: brown;">GETTING STARTED </span></h1>
+                <p>NOSH YARD offer you the opportunity to buy a franchise at minimum investment. Your hard work and
+                    dedication will be rewarded by our proven formula for the establishment of day to day operation of a
+                    retail store. <br>
+                    NOSH YARD offers you the opportunity to be in business, not by yourself but with us. Our role is to
+                    provide you a complete setup, show you how to run it and provide ongoing support to ensure that the
+                    bussiness runs successfully.
+                </p>
+            </div> -->
+        </div>
+    </section>
+    <section class="footer">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>Opening hours</h3>
+                <p>10:00am to 10:00pm</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>+91 9875915650</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope-open"></i>
+                <h3>email</h3>
+                <p><a style="color:white;" href="mailto: noshyardstores@gmail.com"> noshyardstores@gmail.com</a></p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>Office address</h3>
+                <!-- <p>Unit No.1132, 11th Floor Building Number B2 </p> -->
+                <p>Spaze tech Park, Sector 49, Gurugram (Haryana) 122018.</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-link"></i>
+                <h3>Useful links</h3>
+                <ul style="color:white; list-style:none; ">
+                    <li class="fas fa-link" style="font-size: 2rem;padding-bottom:1rem; cursor:pointer; "><a href="index.html" style="color: white;">Home</a></li> <br>
+                    <li class="fas fa-link" style="font-size: 2rem;padding-bottom:1rem; cursor:pointer; "><a href="about.html" style="color: white;">About Us</a></li> <br>
+                    <li class="fas fa-link" style="font-size: 2rem; cursor:pointer; "><a href="contact.html" style="color: white;">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <h1 style="text-align: center; color:white;">Follow us:</h1>
+            <a href="https://www.facebook.com/noshyardstores/" target="blank" class="fab "><img src="images/facebook.png" alt="" width="100%" height="100%"></a>
+            <a href="https://www.instagram.com/noshyardstores/" target="blank" class="fab "><img src="images/instagram.png" alt="" width="100%" height="100%"></a>
+            <a href="https://www.linkedin.com/in/nosh-yard-459a441a6/" target="blank" class="fab "><img src="images/linkedin.png" alt="" width="100%" height="100%"></a>
+            <a href="https://twitter.com/NoshYard" target="blank" class="fab "><img src="images/twitter.png" alt="" width="100%" height="100%"></a>
+        </div>
+        <div class="copyright">
+            <h2 style="color:white; font-size:2rem;"> Copyright <span style="color: brown;"> &copy; The Noshyard</span></h2>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone= 919875915650" class="float" target="_blank">
+            <!-- <i class="fa fa-whatsapp my-float"></i> --><img src="images/whatsapp.png" alt="">
+        </a>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+
+</body>
+
+</html>

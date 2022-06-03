@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif; */
+@font-face {
+    font-family: campus;
+    src: url(/fonts/campus-fonts.ttf);
+  }
+  @font-face {
+    font-family: blackishdemoregular;
+    src: url(/fonts/BlackishDemoRegular.ttf);
+  }
+  
+  
+
+:root {
+    /* --peru:#cd9452;
+   --black:#222;
+   --white:#fff;
+   --light-black:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5; */
+    /* --dark-bg:rgba(0,0,0,.7); */
+    --border: 0.1rem solid #aaa;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+    text-transform: capitalize;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.header {
+    height:7vh;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #411805;
+    z-index: 1000;
+}
+
+
+.header .navbar a {
+    font-size: 1.8rem;
+    padding: 1rem;
+    /* font-weight: bold; */
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border-color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif,Arial,tahoma;
+    /* font-family: campus; */
+}
+
+#menu-btn {
+    font-size:3rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+.contact-table{
+    font-size: 2rem;
+    text-align: center;
+}
+.contact-table tr th{
+    padding: 1rem;
+    border-bottom: 2px solid black;
+}
+.contact-table tr td{
+    padding: 1rem;
+}
+.btn{
+    font-size: 1.8rem;
+    padding: 0.3rem 1rem;
+}
+.authirity{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    height:auto;
+    background:  #EEEEEE;
+    margin: 0px auto;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+.authirity .login-form{
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    padding: 1rem;
+    
+}
+.authirity .login-form input{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}

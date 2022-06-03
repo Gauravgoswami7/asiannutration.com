@@ -1,0 +1,98 @@
+ .login{
+    width: 50vw;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    background: #d3d3ff;
+    padding: 3rem;
+    border-radius: 5px;
+   
+}
+/* .login-container{
+    width: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+} */
+.login input{
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+   
+}
+.login p{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 2500px) {
+    .order-content .order-details .btn{
+       font-size:1.3rem; 
+       padding: 1rem;
+    }
+    .order-content .order-details .order-details-wrapper> h1{
+        font-size: 3rem;
+    }
+    .login{
+        width: 30vw;
+    }
+
+   }
+     
+    
+   
+   /* media queries  */
+   @media (width: 1024px) {
+       section {
+           padding: 4rem 5%;
+       }
+       .login{
+        width: 60vw;
+    }
+       
+   }
+   
+   @media (max-width: 991px) {
+       section {
+           padding: 3rem 2rem;
+       }
+       html {
+           font-size: 55%;
+       }
+       .login{
+        width: 70vw;
+    }
+     
+     
+   }
+   
+   @media (max-width: 768px) {
+       section {
+           padding: 3rem 2rem;
+       }
+       .login{
+        width: 60vw;
+    }
+     
+      
+   
+   }
+   
+   @media (max-width: 450px) {
+       html {
+           font-size: 50%;
+       }
+
+       .login{
+           width: 75vw;
+       }
+
+     
+   
+   }
